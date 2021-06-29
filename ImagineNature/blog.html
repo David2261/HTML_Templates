@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Wild | Source</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<script src="https://use.fontawesome.com/9e732e29d3.js"></script>
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="home.html"><img src="img/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="">HOME</a></li>
+				<li><a href="">ABOUT</a></li>
+				<li><a href="">SOURCE</a></li>
+				<li><a href="">BLOG</a></li>
+				<li><a href="">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Our Program For Our Future</h1>
+</section>
+
+<!-- ----- Blog Page ----- -->
+<section class="blog-content">
+	<div class="row">
+		<div class="blog-left">
+			<img src="img/success.jpg">
+			<h2>Our Way To Success</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Corporis nihil dolorum nam. Praesentium in asperiores numquam atque provident ducimus architecto nihil sapiente ipsa debitis officiis delectus beatae fugiat, molestias? Iure.</p><br>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Laboriosam alias illo ipsum blanditiis dolore nulla nam similique inventore aspernatur eius quas delectus ratione laudantium repellendus eveniet minus reiciendis expedita recusandae optio fuga quisquam ab cumque, iste quis officia? Ex, autem. Est consectetur mollitia cupiditate, dolorum excepturi assumenda sint praesentium provident, eos veniam. Illum nam libero quasi, repudiandae enim ea repellendus quia, ipsum. Voluptas, consectetur eveniet assumenda vero. Mollitia, perferendis corporis reprehenderit illo rem eaque sint. Aut iure sunt quae, eaque minima expedita libero. Provident facere inventore quae, fuga totam doloremque magni accusantium pariatur, quas perferendis sequi praesentium eos dolorem labore.</p><br>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed assumenda fugit rerum distinctio eligendi nesciunt, voluptates eaque doloremque tempora aspernatur ipsum doloribus quibusdam saepe atque qui cum. Veniam officia rerum excepturi nulla neque dignissimos reiciendis voluptatem officiis sint error. Quia doloribus obcaecati aspernatur dignissimos deleniti ipsum sit, corrupti dolore ut laboriosam voluptates libero incidunt delectus, quaerat ullam praesentium porro id quo vero! Quam aliquid pariatur aliquam omnis quia culpa, ab atque totam perferendis, nam voluptas! Laudantium necessitatibus magni, similique fugiat debitis consectetur, quae dignissimos odio tenetur ipsum modi atque nobis? Deserunt veritatis, porro dolor perferendis ullam nesciunt quasi atque.</p><br>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci qui quaerat cum. Sapiente ea accusantium nostrum, debitis maxime neque, assumenda officiis incidunt exercitationem vero, sequi quidem facere possimus quis numquam totam in aperiam minus tempora quod veritatis quaerat eos quasi? Ratione, voluptate. Temporibus, nostrum omnis dolorum maxime, animi officiis delectus est distinctio ex dolor repellendus nulla sequi, praesentium accusamus iure ullam quaerat hic aperiam inventore iste tempora vitae dignissimos possimus quod. Consectetur fugit tempore tempora, odio autem id nam minus corrupti dolorum rem suscipit recusandae quo vel quidem delectus nisi iusto accusantium exercitationem ratione quod fugiat laborum assumenda soluta.</p>
+
+
+			<div class="comment-box">
+				<h3>Leave a Comment</h3>
+				<form class="comment-form">
+					<input type="text" placeholder="Enter Name">
+					<input type="email" placeholder="Enter Email">
+					<textarea rows="5" placeholder="Enter Comment"></textarea>
+					<button class="hero-btn red-btn">Post</button>
+				</form>
+			</div>
+
+		</div>
+		<div class="blog-right">
+			<h3>Post Categories</h3>
+			<div>
+				<span>Ecologist</span>
+				<span>#1</span>
+			</div>
+			<div>
+				<span>Zoologist</span>
+				<span>#2</span>
+			</div>
+			<div>
+				<span>Volunteer</span>
+				<span>#3</span>
+			</div>
+			<div>
+				<span>Philanthropist</span>
+				<span>#4</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- ----- Footer ----- -->
+<selection class="footer">
+	<h4>About us</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Est esse rerum, vitae eaque! Illo, officiis qui.<br>Rerum ratione magni ullam totam, quis, modi voluptatem possimus obcaecati porro dignissimos, tempore cupiditate?</p>
+	<div class="icons">
+			<a href="https://www.facebook.com/suleiman.baum/"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/gt_mambogo/"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/bulat-nasyrov-7705231bb/"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<p>Made with <i class="fa fa-heart"></i> To Help Nature</p>
+</selection>
+
+<!----- JavaScript ----->
+<script>
+var navLinks = document.getElementById('navLinks');
+/* Это нужно чтобы показывать nav или скрывать при нажатие на него ;) */
+function showMenu() {
+	navLinks.style.right = "0";
+}
+function hideMenu() {
+	navLinks.style.right = "-200px";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Wild | About</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<script src="https://use.fontawesome.com/9e732e29d3.js"></script>
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="home.html"><img src="img/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="source.html">SOURCE</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>About Us</h1>
+</section>
+<!-- ----- About us Content ----- -->
+<section class="about-us">
+	<div class="row">
+		<div class="about-col">
+			<h1>We Make The World A Better Place</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum libero inventore id minima dolore cupiditate autem, ullam deserunt consequuntur, repellendus fuga magni mollitia sed. Quaerat ut repellendus, voluptas aliquam?</p>
+			<a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="img/about.jpg">
+		</div>
+	</div>
+</section>
+
+
+<!-- ----- Footer ----- -->
+<selection class="footer">
+	<h4>About us</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Est esse rerum, vitae eaque! Illo, officiis qui.<br>Rerum ratione magni ullam totam, quis, modi voluptatem possimus obcaecati porro dignissimos, tempore cupiditate?</p>
+	<div class="icons">
+			<a href="https://www.facebook.com/suleiman.baum/"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/gt_mambogo/"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/bulat-nasyrov-7705231bb/"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<p>Made with <i class="fa fa-heart"></i> To Help Nature</p>
+</selection>
+
+<!----- JavaScript ----->
+<script>
+var navLinks = document.getElementById('navLinks');
+/* Это нужно чтобы показывать nav или скрывать при нажатие на него ;) */
+function showMenu() {
+	navLinks.style.right = "0";
+}
+function hideMenu() {
+	navLinks.style.right = "-200px";
+}
+</script>
+</body>
+</html>
