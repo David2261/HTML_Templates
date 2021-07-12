@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FullScreen Video Background Fadeout On Scroll</title>
+	<link rel="stylesheet" href="css/fsvb.css">
+	<link rel="shortcut icon" href="img/FishShop.svg" type="image/x-icon" />
+	<script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+</head>
+<body>
+<section>
+	<video src="img/fsvb.mp4" autoplay="" muted="" loop=""></video>
+</section>
+
+<section>
+	<div class="content">
+		<h2>Fadeout Video Background On Scroll</h2>
+		<p>
+			<span class="punchline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis esse, consectetur architecto totam molestias corporis reprehenderit fuga molestiae temporibus, vel officiis reiciendis, dignissimos tempore illum. Odio, explicabo ipsa? Est, enim.</span><br>
+			<span class="punchline">Vel dolor voluptatem quam, laborum nesciunt odio maxime vitae quidem maiores eveniet cupiditate quasi doloremque quisquam magni ipsum culpa natus officia beatae inventore praesentium, quis accusamus amet similique? Blanditiis, ratione!</span><br>
+			<span class="punchline">Alias sed ullam vel deleniti nulla pariatur veritatis. Vitae dignissimos, sunt distinctio, quas vel, ipsam consectetur, dolorem maxime ipsa labore dicta. Accusantium earum ipsam est ut voluptatibus odio nobis maiores!</span><br>
+			<span class="punchline">Natus similique praesentium, debitis facilis, cupiditate sequi! Velit eius consequatur nesciunt impedit suscipit esse at officia voluptatibus libero! Nihil, repudiandae in sequi veniam optio nisi. Omnis, quis! Eum ducimus, perspiciatis.</span><br>
+			<span class="punchline">Repellendus facere dolor nemo nulla libero sint, sunt accusantium, illum dignissimos autem eius adipisci placeat culpa beatae molestias rerum minima necessitatibus voluptas explicabo! Dolorum eaque neque dolorem magni dolores eos.</span><br>
+			<span class="punchline">Numquam cumque id repellat vero eaque fugit similique, fugiat, porro expedita tenetur nihil laboriosam asperiores. Amet, fugit ex id ad quas, magnam quae accusantium libero facere deserunt corporis delectus, molestias!</span><br>
+			<span class="punchline">Porro consequatur minima blanditiis, repudiandae error quia sapiente velit nobis dolor dolorum qui illum nisi aperiam tempora quis ea, magnam minus veritatis fugiat dolores veniam, quisquam sint. Ab, nisi, facere!</span><br>
+			<span class="punchline">Neque odio doloribus quod corrupti nemo repellat, voluptatum eius consectetur autem nesciunt. Totam tenetur porro asperiores provident, ipsum harum. Officia nam provident blanditiis architecto, quia dolores culpa rerum sit. Sint.</span><br>
+			<span class="punchline">Minima nobis odio aspernatur quae, rerum mollitia at, dolorum fuga magnam nesciunt molestias atque totam quo veritatis doloribus itaque laudantium ex, consequatur aliquam blanditiis ipsa error dolore. Maxime, aperiam, incidunt?</span><br>
+			<span class="punchline">Excepturi sapiente inventore hic! Omnis ex reiciendis repellendus eaque dolorum impedit beatae aperiam sint voluptates incidunt? Ipsum reiciendis enim impedit assumenda inventore? Deserunt quibusdam molestiae nostrum, ad facilis magnam aliquid!</span><br>
+		</p>
+	</div>
+</section>
+
+<script type="text/javascript">
+let video = document.querySelector('video');
+window.addEventListener('scroll', function () {
+	let value= 1 + window.scrollY/-600;
+	video.style.opacity = value;
+});
+
+ScrollReveal().reveal('.punchline', { delay: 500 });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+</body>
+</html>
